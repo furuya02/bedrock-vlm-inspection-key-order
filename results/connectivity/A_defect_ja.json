@@ -1,0 +1,80 @@
+{
+  "model": "typesafe-ai/jev",
+  "answers": {
+    "verdict": {
+      "type": "choice",
+      "choice": "NG",
+      "confidence": 1,
+      "probabilities": {
+        "OK": 0,
+        "REVIEW": 0,
+        "NG": 1
+      }
+    },
+    "has_defect": {
+      "type": "noul",
+      "noul": 0.97
+    },
+    "severity": {
+      "type": "score",
+      "score": 1.99,
+      "confidence": 0.99,
+      "legend": {
+        "0": "欠陥なし",
+        "1": "軽微",
+        "2": "明らかな欠陥"
+      },
+      "probabilities": {
+        "0": 0,
+        "1": 0.01,
+        "2": 0.99
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 455,
+    "output_tokens": 72
+  },
+  "provider_metadata": {
+    "typesafe": {
+      "confidence": {
+        "verdict": 1,
+        "severity": 0.99
+      }
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "typesafe-ai/jev",
+        "resolvedProvider": "typesafe-ai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: typesafe-ai. Total execution order: typesafe-ai(system)",
+        "canonicalSlug": "typesafe-ai/jev",
+        "finalProvider": "typesafe-ai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "typesafe-ai/jev",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "typesafe-ai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790114800944,
+                "endTime": 1790114801145,
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.00001911",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35JG8XE6N852QT1CNA28WYX"
+    }
+  }
+}

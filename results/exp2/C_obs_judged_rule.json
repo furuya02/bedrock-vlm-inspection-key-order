@@ -1,0 +1,105 @@
+{
+  "src": "results/exp2/C_obs",
+  "judge": "rule",
+  "results": {
+    "n1": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n2": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n3": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n4": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n5": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "d1_stain": {
+      "verdict": "NG",
+      "runs": [
+        "NG",
+        "NG",
+        "NG"
+      ],
+      "counts": {
+        "NG": 3
+      }
+    },
+    "d2_broken": {
+      "verdict": "NG",
+      "runs": [
+        "NG",
+        "NG",
+        "NG"
+      ],
+      "counts": {
+        "NG": 3
+      }
+    },
+    "d3_deformed": {
+      "verdict": "NG",
+      "runs": [
+        "NG",
+        "NG",
+        "NG"
+      ],
+      "counts": {
+        "NG": 3
+      }
+    },
+    "d4_bent": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    }
+  }
+}

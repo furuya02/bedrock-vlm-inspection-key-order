@@ -1,0 +1,533 @@
+{
+  "src": "results/exp2/A_obs",
+  "judge": "jev",
+  "results": {
+    "n1": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n2": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n3": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n4": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n5": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "d1_stain": {
+      "verdict": "NG",
+      "runs": [
+        "REVIEW",
+        "NG",
+        "NG"
+      ],
+      "counts": {
+        "REVIEW": 1,
+        "NG": 2
+      }
+    },
+    "d2_broken": {
+      "verdict": "NG",
+      "runs": [
+        "NG",
+        "NG",
+        "NG"
+      ],
+      "counts": {
+        "NG": 3
+      }
+    },
+    "d3_deformed": {
+      "verdict": "REVIEW",
+      "runs": [
+        "REVIEW",
+        "REVIEW",
+        "REVIEW"
+      ],
+      "counts": {
+        "REVIEW": 3
+      }
+    },
+    "d4_bent": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    }
+  },
+  "detail": [
+    {
+      "seconds": 0.383,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.36,
+      "probabilities": {
+        "NG": 0,
+        "REVIEW": 0.42,
+        "OK": 0.58
+      },
+      "noul": 0.36,
+      "score": 1.27,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.399,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.26,
+      "probabilities": {
+        "REVIEW": 0.49,
+        "OK": 0.51,
+        "NG": 0
+      },
+      "noul": 0.38,
+      "score": 1.3,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.37,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.38,
+      "probabilities": {
+        "OK": 0.59,
+        "NG": 0,
+        "REVIEW": 0.41
+      },
+      "noul": 0.35,
+      "score": 1.25,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.551,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.37,
+      "probabilities": {
+        "NG": 0,
+        "REVIEW": 0.42,
+        "OK": 0.58
+      },
+      "noul": 0.35,
+      "score": 1.29,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.44,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.35,
+      "probabilities": {
+        "NG": 0,
+        "REVIEW": 0.43,
+        "OK": 0.57
+      },
+      "noul": 0.38,
+      "score": 1.31,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.552,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.34,
+      "probabilities": {
+        "OK": 0.56,
+        "REVIEW": 0.44,
+        "NG": 0
+      },
+      "noul": 0.35,
+      "score": 1.26,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.397,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.4,
+      "probabilities": {
+        "REVIEW": 0.4,
+        "OK": 0.6,
+        "NG": 0
+      },
+      "noul": 0.36,
+      "score": 1.27,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.642,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.38,
+      "probabilities": {
+        "REVIEW": 0.41,
+        "OK": 0.59,
+        "NG": 0
+      },
+      "noul": 0.36,
+      "score": 1.33,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.709,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.34,
+      "probabilities": {
+        "NG": 0,
+        "OK": 0.56,
+        "REVIEW": 0.44
+      },
+      "noul": 0.36,
+      "score": 1.29,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.401,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.33,
+      "probabilities": {
+        "NG": 0,
+        "OK": 0.56,
+        "REVIEW": 0.44
+      },
+      "noul": 0.38,
+      "score": 1.25,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.354,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.32,
+      "probabilities": {
+        "OK": 0.55,
+        "REVIEW": 0.45,
+        "NG": 0
+      },
+      "noul": 0.37,
+      "score": 1.25,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.369,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.45,
+      "probabilities": {
+        "REVIEW": 0.36,
+        "OK": 0.64,
+        "NG": 0
+      },
+      "noul": 0.35,
+      "score": 1.27,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.398,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.39,
+      "probabilities": {
+        "NG": 0,
+        "REVIEW": 0.41,
+        "OK": 0.59
+      },
+      "noul": 0.35,
+      "score": 1.18,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.449,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.35,
+      "probabilities": {
+        "OK": 0.5700000000000001,
+        "REVIEW": 0.43,
+        "NG": 0
+      },
+      "noul": 0.38,
+      "score": 1.33,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.55,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.38,
+      "probabilities": {
+        "OK": 0.59,
+        "REVIEW": 0.41,
+        "NG": 0
+      },
+      "noul": 0.37,
+      "score": 1.31,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.528,
+      "input_tokens": 910,
+      "output_tokens": 73,
+      "confidence": 0.29,
+      "probabilities": {
+        "OK": 0,
+        "REVIEW": 0.53,
+        "NG": 0.47
+      },
+      "noul": 0.82,
+      "score": 1.91,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.606,
+      "input_tokens": 910,
+      "output_tokens": 72,
+      "confidence": 0.31,
+      "probabilities": {
+        "NG": 0.54,
+        "OK": 0,
+        "REVIEW": 0.46
+      },
+      "noul": 0.83,
+      "score": 1.91,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.402,
+      "input_tokens": 910,
+      "output_tokens": 72,
+      "confidence": 0.32,
+      "probabilities": {
+        "NG": 0.55,
+        "REVIEW": 0.45,
+        "OK": 0
+      },
+      "noul": 0.83,
+      "score": 1.92,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.415,
+      "input_tokens": 855,
+      "output_tokens": 72,
+      "confidence": 0.93,
+      "probabilities": {
+        "REVIEW": 0.04,
+        "NG": 0.96,
+        "OK": 0
+      },
+      "noul": 0.9,
+      "score": 1.98,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.634,
+      "input_tokens": 855,
+      "output_tokens": 72,
+      "confidence": 0.93,
+      "probabilities": {
+        "REVIEW": 0.05,
+        "OK": 0,
+        "NG": 0.95
+      },
+      "noul": 0.9,
+      "score": 1.97,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.376,
+      "input_tokens": 855,
+      "output_tokens": 72,
+      "confidence": 0.93,
+      "probabilities": {
+        "REVIEW": 0.05,
+        "NG": 0.95,
+        "OK": 0
+      },
+      "noul": 0.91,
+      "score": 1.97,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.664,
+      "input_tokens": 991,
+      "output_tokens": 73,
+      "confidence": 0.46,
+      "probabilities": {
+        "REVIEW": 0.64,
+        "NG": 0.36,
+        "OK": 0
+      },
+      "noul": 0.78,
+      "score": 1.75,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.558,
+      "input_tokens": 991,
+      "output_tokens": 73,
+      "confidence": 0.42,
+      "probabilities": {
+        "REVIEW": 0.61,
+        "OK": 0,
+        "NG": 0.39
+      },
+      "noul": 0.78,
+      "score": 1.8,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.348,
+      "input_tokens": 991,
+      "output_tokens": 73,
+      "confidence": 0.38,
+      "probabilities": {
+        "OK": 0,
+        "NG": 0.41,
+        "REVIEW": 0.59
+      },
+      "noul": 0.79,
+      "score": 1.78,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.44,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.34,
+      "probabilities": {
+        "NG": 0,
+        "OK": 0.56,
+        "REVIEW": 0.44
+      },
+      "noul": 0.36,
+      "score": 1.32,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.466,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.28,
+      "probabilities": {
+        "REVIEW": 0.48,
+        "NG": 0,
+        "OK": 0.52
+      },
+      "noul": 0.37,
+      "score": 1.27,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    },
+    {
+      "seconds": 0.373,
+      "input_tokens": 504,
+      "output_tokens": 72,
+      "confidence": 0.3,
+      "probabilities": {
+        "NG": 0,
+        "OK": 0.54,
+        "REVIEW": 0.46
+      },
+      "noul": 0.34,
+      "score": 1.19,
+      "cost": "0",
+      "model": "typesafe-ai/jev"
+    }
+  ],
+  "seconds_avg": 0.473,
+  "input_tokens_total": 17340,
+  "output_tokens_total": 1948,
+  "retries": [
+    {
+      "status": 429,
+      "attempt": 1,
+      "wait": 1.0
+    },
+    {
+      "status": 503,
+      "attempt": 1,
+      "wait": 1.0
+    },
+    {
+      "status": 429,
+      "attempt": 2,
+      "wait": 2.0
+    }
+  ]
+}

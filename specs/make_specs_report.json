@@ -1,0 +1,47 @@
+[
+  {
+    "tag": "A",
+    "keys_original": [
+      "verdict",
+      "findings",
+      "normal_observations",
+      "overall_notes"
+    ],
+    "keys_ord": [
+      "findings",
+      "verdict",
+      "normal_observations",
+      "overall_notes"
+    ],
+    "keys_obs": [
+      "findings"
+    ],
+    "prompt_same_as_original_ord": true,
+    "prompt_chars_original": 1697,
+    "prompt_chars_obs": 1617
+  },
+  {
+    "tag": "C",
+    "keys_original": [
+      "verdict",
+      "findings",
+      "normal_observations",
+      "overall_notes",
+      "symmetry_check"
+    ],
+    "keys_ord": [
+      "findings",
+      "verdict",
+      "normal_observations",
+      "overall_notes",
+      "symmetry_check"
+    ],
+    "keys_obs": [
+      "findings",
+      "symmetry_check"
+    ],
+    "prompt_same_as_original_ord": true,
+    "prompt_chars_original": 2259,
+    "prompt_chars_obs": 1711
+  }
+]

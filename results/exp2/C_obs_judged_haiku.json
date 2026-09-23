@@ -1,0 +1,108 @@
+{
+  "src": "results/exp2/C_obs",
+  "judge": "haiku",
+  "results": {
+    "n1": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n2": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n3": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n4": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "n5": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    },
+    "d1_stain": {
+      "verdict": "REVIEW",
+      "runs": [
+        "REVIEW",
+        "REVIEW",
+        "REVIEW"
+      ],
+      "counts": {
+        "REVIEW": 3
+      }
+    },
+    "d2_broken": {
+      "verdict": "REVIEW",
+      "runs": [
+        "REVIEW",
+        "REVIEW",
+        "REVIEW"
+      ],
+      "counts": {
+        "REVIEW": 3
+      }
+    },
+    "d3_deformed": {
+      "verdict": "REVIEW",
+      "runs": [
+        "REVIEW",
+        "REVIEW",
+        "REVIEW"
+      ],
+      "counts": {
+        "REVIEW": 3
+      }
+    },
+    "d4_bent": {
+      "verdict": "OK",
+      "runs": [
+        "OK",
+        "OK",
+        "OK"
+      ],
+      "counts": {
+        "OK": 3
+      }
+    }
+  },
+  "seconds_avg": 0.544,
+  "input_tokens_total": 14853,
+  "output_tokens_total": 387
+}

@@ -1,0 +1,64 @@
+{
+  "model": "typesafe-ai/jev",
+  "answers": {
+    "has_defect": {
+      "type": "boolean",
+      "probability": 0.96
+    },
+    "verdict": {
+      "type": "choice",
+      "choice": "NG",
+      "probabilities": {
+        "OK": 0,
+        "REVIEW": 0,
+        "NG": 1
+      },
+      "confidence": 1
+    }
+  },
+  "usage": {
+    "inputTokens": 407,
+    "outputTokens": 58
+  },
+  "providerMetadata": {
+    "typesafe": {
+      "confidence": {
+        "verdict": 1
+      }
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "typesafe-ai/jev",
+        "resolvedProvider": "typesafe-ai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: typesafe-ai. Total execution order: typesafe-ai(system)",
+        "canonicalSlug": "typesafe-ai/jev",
+        "finalProvider": "typesafe-ai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "typesafe-ai/jev",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "typesafe-ai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790114802758,
+                "endTime": 1790114802893,
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.000017094",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35JGB1BH5HHJEH5A48MTPP7"
+    }
+  }
+}

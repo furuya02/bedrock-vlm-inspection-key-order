@@ -1,0 +1,37 @@
+{
+  "final": null,
+  "runs": [
+    {
+      "findings": []
+    },
+    {
+      "findings": []
+    },
+    {
+      "findings": []
+    }
+  ],
+  "meta": [
+    {
+      "model_id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "seconds": 6.53,
+      "input_tokens": 6647,
+      "output_tokens": 531,
+      "temperature_sent": true
+    },
+    {
+      "model_id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "seconds": 6.46,
+      "input_tokens": 6647,
+      "output_tokens": 531,
+      "temperature_sent": true
+    },
+    {
+      "model_id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "seconds": 6.49,
+      "input_tokens": 6647,
+      "output_tokens": 531,
+      "temperature_sent": true
+    }
+  ]
+}
