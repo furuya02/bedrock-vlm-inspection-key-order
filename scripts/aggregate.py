@@ -51,6 +51,7 @@ rows = []
 
 # ① idea036（既存データ）
 for tag, d in [("① 現状 A（idea036）", "results/idea036/haiku"),
+               ("① 現状 B（idea036）", "results/idea036/partB"),
                ("① 現状 C（idea036）", "results/idea036/partC")]:
     data = load_dir(d)
     v = verdicts_from_runs(data)
@@ -60,7 +61,8 @@ for tag, d in [("① 現状 A（idea036）", "results/idea036/haiku"),
     rows.append((tag, "VLM 自身", det, fp, sec, cost, fails, v))
 
 # ② 順序入替
-for tag, d in [("② 順序入替 A", "results/exp2/A_ord"), ("② 順序入替 C", "results/exp2/C_ord")]:
+for tag, d in [("② 順序入替 A", "results/exp2/A_ord"), ("② 順序入替 B", "results/exp2/B_ord"),
+               ("② 順序入替 C", "results/exp2/C_ord")]:
     data = load_dir(d)
     v = verdicts_from_runs(data)
     det, fp = score(v)
@@ -69,17 +71,17 @@ for tag, d in [("② 順序入替 A", "results/exp2/A_ord"), ("② 順序入替 
     rows.append((tag, "VLM 自身", det, fp, sec, cost, fails, v))
 
 # ③④⑤ 観測のみ（VLM 実行は共通、判断層だけ差し替え）
-for src, label in [("results/exp2/A_obs", "A"), ("results/exp2/C_obs", "C")]:
+for src, label in [("results/exp2/A_obs", "A"), ("results/exp2/B_obs", "B"), ("results/exp2/C_obs", "C")]:
     data = load_dir(src)
     ti, to, vlm_cost, vlm_sec = cost_of(data)
     fails = sum(1 for x in data.values() for r in x["runs"] if r is None)
-    for judge, mark in [("rule", "⑤ 観測のみ+ルール"), ("haiku", "④ 観測のみ+Haikuテキスト")]:
+    for judge, mark in [("rule", "⑤ 観測のみ+ルール"), ("haiku", "④ 観測のみ+Haikuテキスト"), ("jev", "③ 観測のみ+Jev")]:
         f = f"{src}_judged_{judge}.json"
         if not Path(f).exists():
             continue
         v, j = verdicts_from_judge(f)
         det, fp = score(v)
-        jc = 0.0 if judge == "rule" else (j["input_tokens_total"] + j["output_tokens_total"] * 5) / 1_000_000
+        jc = (j["input_tokens_total"] + j["output_tokens_total"] * 5) / 1_000_000 if judge == "haiku" else 0.0
         jsec = 0.0 if judge == "rule" else j["seconds_avg"] * 3
         rows.append((f"{mark} {label}", judge, det, fp, vlm_sec + jsec, vlm_cost + jc, fails, v))
 
@@ -97,7 +99,7 @@ for tag, judge, det, fp, sec, cost, fails, v in rows:
     print(f"{tag:<26}" + "".join(f"{str(v.get(n)):<13}" for n in DEFECTS))
 
 print("\n■ 報告された欠陥種別（観測のみ条件・run0）")
-for src in ["results/exp2/A_obs", "results/exp2/C_obs"]:
+for src in ["results/exp2/A_obs", "results/exp2/B_obs", "results/exp2/C_obs"]:
     print(f"  [{src}]")
     for n in DEFECTS:
         f = Path(src) / f"res_{n}.json"

@@ -21,6 +21,26 @@
     "prompt_chars_obs": 1617
   },
   {
+    "tag": "B",
+    "keys_original": [
+      "symmetry_check",
+      "verdict",
+      "findings"
+    ],
+    "keys_ord": [
+      "symmetry_check",
+      "findings",
+      "verdict"
+    ],
+    "keys_obs": [
+      "symmetry_check",
+      "findings"
+    ],
+    "prompt_same_as_original_ord": true,
+    "prompt_chars_original": 1625,
+    "prompt_chars_obs": 1517
+  },
+  {
     "tag": "C",
     "keys_original": [
       "verdict",

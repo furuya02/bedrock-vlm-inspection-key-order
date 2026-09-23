@@ -1,0 +1,55 @@
+{
+  "final": {
+    "verdict": "OK",
+    "cells": [],
+    "verdict_counts": {
+      "OK": 3
+    },
+    "cell_counts": {}
+  },
+  "runs": [
+    {
+      "symmetry_check": "左右の脚を中心線で比較しました。左脚と右脚の太さ、長さ、曲がり方を確認したところ、両脚は鏡像関係を保っており、左右対称性は正常です。上端の2本の先端も中心線をまたいでほぼ等しい長さで並んでいます。",
+      "findings": [],
+      "verdict": "OK"
+    },
+    {
+      "symmetry_check": "左右の脚を中心線で比較しました。左脚と右脚の太さ、長さ、曲がり方を確認したところ、両脚は鏡像関係を保っており、左右対称性は正常です。上端の2本の先端も中心線をまたいでほぼ等しい長さで並んでいます。",
+      "findings": [],
+      "verdict": "OK"
+    },
+    {
+      "symmetry_check": "左右の脚を中心線で比較しました。左脚と右脚の太さ、長さ、曲がり方を確認したところ、両脚は鏡像関係を保っており、左右対称性は正常です。上端の2本の先端も中心線をまたいでほぼ等しい長さで並んでいます。",
+      "findings": [],
+      "verdict": "OK"
+    }
+  ],
+  "meta": [
+    {
+      "model_id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "seconds": 2.13,
+      "input_tokens": 6329,
+      "output_tokens": 136,
+      "temperature_sent": true
+    },
+    {
+      "model_id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "seconds": 2.03,
+      "input_tokens": 6329,
+      "output_tokens": 136,
+      "temperature_sent": true
+    },
+    {
+      "model_id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "seconds": 2.12,
+      "input_tokens": 6329,
+      "output_tokens": 136,
+      "temperature_sent": true
+    }
+  ],
+  "raw": [
+    "```json\n{\n  \"symmetry_check\": \"左右の脚を中心線で比較しました。左脚と右脚の太さ、長さ、曲がり方を確認したところ、両脚は鏡像関係を保っており、左右対称性は正常です。上端の2本の先端も中心線をまたいでほぼ等しい長さで並んでいます。\",\n  \"findings\": [],\n  \"verdict\": \"OK\"\n}\n```",
+    "```json\n{\n  \"symmetry_check\": \"左右の脚を中心線で比較しました。左脚と右脚の太さ、長さ、曲がり方を確認したところ、両脚は鏡像関係を保っており、左右対称性は正常です。上端の2本の先端も中心線をまたいでほぼ等しい長さで並んでいます。\",\n  \"findings\": [],\n  \"verdict\": \"OK\"\n}\n```",
+    "```json\n{\n  \"symmetry_check\": \"左右の脚を中心線で比較しました。左脚と右脚の太さ、長さ、曲がり方を確認したところ、両脚は鏡像関係を保っており、左右対称性は正常です。上端の2本の先端も中心線をまたいでほぼ等しい長さで並んでいます。\",\n  \"findings\": [],\n  \"verdict\": \"OK\"\n}\n```"
+  ]
+}

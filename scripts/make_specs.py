@@ -10,7 +10,9 @@
   obs … verdict / normal_observations / overall_notes をスキーマから外し、
         プロンプトの「■ 判定」節を削って「■ 出力」節を観測専用に差し替える。
         狙い: VLM に判断させず、観測だけを返させる。判断は後段（Jev / Haiku / ルール）が行う。
-        ※ C の symmetry_check は「手順を踏んだ記録」＝観測なので残す。
+        ※ B / C の symmetry_check は「手順を踏んだ記録」＝観測なので残す。
+        ※ B は「■ 出力」節に部位名・difference_from_normal・symmetry_check の指示が
+          まとめて入っているため、節を差し替えずに残し、判定しない旨の一文だけ足す。
 
 Usage:
     python scripts/make_specs.py
@@ -58,10 +60,19 @@ def to_observation_only(schema):
     return schema
 
 
-def strip_judgement(prompt):
-    """「■ 判定」節を削り、「■ 出力」節を観測専用に差し替える"""
+NO_JUDGEMENT = "この工程では合否の判定を行いません。OK / REVIEW / NG といった判定は出力せず、見えたものの記述だけを返してください。"
+
+
+def strip_judgement(prompt, keep_output_body=False):
+    """「■ 判定」節を削り、「■ 出力」節を観測専用にする
+
+    keep_output_body=True のときは「■ 出力」節の本文を残し、判定しない旨の一文だけ足す（B 用）。
+    """
     i, j = prompt.index("■ 判定"), prompt.index("■ 出力")
     assert i < j, "想定と違う並び"
+    if keep_output_body:
+        head, _, body = prompt[j:].partition("\n")
+        return prompt[:i] + head + "\n" + NO_JUDGEMENT + "\n" + body
     tail = prompt[j:]
     # 「■ 出力」節の本体を差し替え、その後ろに続く補足（C の symmetry_check の指示など）は残す
     lines = tail.split("\n")
@@ -74,7 +85,9 @@ def main():
     OUT.mkdir(exist_ok=True)
     report = []
 
-    for tag, fname in [("A", "spec_clothespin_4x4.json"), ("C", "spec_clothespin_partC.json")]:
+    for tag, fname in [("A", "spec_clothespin_4x4.json"),
+                       ("B", "spec_clothespin_partB.json"),
+                       ("C", "spec_clothespin_partC.json")]:
         base = json.loads((SRC / fname).read_text(), object_pairs_hook=OrderedDict)
         # 参照画像のパスを本リポジトリのものに直す（内容は idea036 と同一の画像）
         base["_meta"]["normal_images"] = ["images/normal/n1.jpg", "images/normal/n5.jpg"]
@@ -90,7 +103,8 @@ def main():
         # ③ 観測のみ: 判断に関するキーとプロンプト節を落とす
         obs_spec = json.loads(json.dumps(base), object_pairs_hook=OrderedDict)
         obs_spec["output_schema"] = to_observation_only(obs_spec["output_schema"])
-        obs_spec["inspection_prompt"] = strip_judgement(obs_spec["inspection_prompt"])
+        obs_spec["inspection_prompt"] = strip_judgement(obs_spec["inspection_prompt"],
+                                                        keep_output_body=(tag == "B"))
         obs_spec["_meta"]["variant"] = f"{tag}_obs_only"
         (OUT / f"spec_{tag}_obs.json").write_text(json.dumps(obs_spec, ensure_ascii=False, indent=2))
 
