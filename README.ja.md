@@ -5,7 +5,7 @@ Amazon Bedrock の VLM を使った外観検査で、出力スキーマのキー
 前回の記事で、検査プロンプトを改善したら検出できていた欠陥まで検出できなくなる、という結果が出ました。
 原因を調べたところ、出力スキーマで `verdict`（判定）を `findings`（所見）より先に定義していたことが影響していました。
 
-- ブログ: （公開後に URL を記載）
+- ブログ: [[Amazon Bedrock] VLM に判定を先に書かせるのを止めて、外観検査の検出率を比べてみました 〜Jev のドキュメントにヒントを得て〜](https://dev.classmethod.jp/articles/bedrock-vlm-inspection-verdict-order/)
 - 前回の記事: [[Amazon Bedrock] 洗濯ばさみで外観検査AIを試してみました](https://dev.classmethod.jp/articles/bedrock-vlm-visual-inspection-clothespin/)
 
 ## 分かったこと
