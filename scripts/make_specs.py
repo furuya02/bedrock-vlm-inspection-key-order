@@ -108,6 +108,18 @@ def main():
         obs_spec["_meta"]["variant"] = f"{tag}_obs_only"
         (OUT / f"spec_{tag}_obs.json").write_text(json.dumps(obs_spec, ensure_ascii=False, indent=2))
 
+        # B の所見には reason 欄があり、そこに「欠陥と見なさない」という判定が紛れ込んだ。
+        # reason を外した版も作り、判定の入口をふさいだときの挙動を見る。
+        item = obs_spec["output_schema"]["properties"]["findings"]["items"]
+        if "reason" in item.get("properties", {}):
+            nr = json.loads(json.dumps(obs_spec), object_pairs_hook=OrderedDict)
+            it = nr["output_schema"]["properties"]["findings"]["items"]
+            it["properties"].pop("reason")
+            if "required" in it:
+                it["required"] = [k for k in it["required"] if k != "reason"]
+            nr["_meta"]["variant"] = f"{tag}_obs_noreason"
+            (OUT / f"spec_{tag}_obs_noreason.json").write_text(json.dumps(nr, ensure_ascii=False, indent=2))
+
         report.append({
             "tag": tag,
             "keys_original": before,
